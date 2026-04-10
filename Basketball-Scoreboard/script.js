@@ -1,5 +1,7 @@
 let scoreHome = document.getElementById("scoreHome");
 let scoreGuest = document.getElementById("scoreGuest")
+let reset = document.querySelectorAll(".reset")
+
 
 
 let globalHome=0
@@ -30,3 +32,9 @@ function guestScoresThree(){
   globalGuest+=3
   scoreGuest.textContent = globalGuest
 }
+reset[0].addEventListener("click", ()=>{  
+  globalHome=0
+  globalGuest=0
+  scoreHome.textContent = globalHome
+  scoreGuest.textContent = globalGuest
+})
