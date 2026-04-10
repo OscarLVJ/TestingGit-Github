@@ -1,28 +1,49 @@
 body {
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
 }
 
-.scoreHome,.scoreGuest {
-    background: #0a0001;
-    font-size: 90px;
-    color: #F94F6D;
-    width: 120px;
-    margin: 20px;
+.scoreHome,
+.scoreGuest {
+  background: #0a0001;
+  font-size: 90px;
+  color: #f94f6d;
+  width: 120px;
+  margin: 20px;
 }
 
 .container {
-    display: flex;
-    justify-content: space-around;
-    background-color: #1B244A;
-    padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #1b244a;
+  padding: 20px 0;
 }
 
 button {
-    background: none;
-    color: #9AABD8;
-    border-color: #9AABD8;
+  background: none;
+  color: #9aabd8;
+  border-color: #9aabd8;
+}
+@media screen and (min-width: 992px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    width: 700px;;
+  }
 }
 
-
-
+@media screen and (min-width: 598px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 700px;
+  }
+}
